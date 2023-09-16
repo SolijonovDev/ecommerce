@@ -37,5 +37,6 @@ setTimeout(() => {
 }
 .main {
   flex-grow: 1;
+  padding-top: 115px;
 }
 </style>

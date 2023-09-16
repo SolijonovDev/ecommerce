@@ -11,22 +11,51 @@ onMounted(() => {
 const router = useRouter();
 const route = useRoute();
 
-const handleBackHome = () => {
-  console.log('route: ', route);
-  router.push('/');
-};
-
 const text = inject('text');
 </script>
 
 <template>
   <div>
-    <Container>
-      <h2>Login page</h2>
-      <p>{{ text }}</p>
-      <button @click="handleBackHome">Back</button>
+    <Container class="container">
+      <div class="content">
+        <h2 class="title">Login page</h2>
+      <div class="block">
+         <button>Login with Google</button>
+         <button>Login with Facebook</button>
+         <button>Login with Github</button>
+      </div>
+      </div>
     </Container>
   </div>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+ .container{
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+ }
+ .content{
+  width: 100%;
+  max-width: 450px;
+  padding: 15px;
+  border-radius: 8px;
+ }
+ .title{
+  text-align: center;
+  margin-bottom: 25px;
+ }
+ .block{
+  margin-bottom: 15px;
+
+  button{
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+ }
+</style>
