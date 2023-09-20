@@ -19,7 +19,7 @@ watchEffect(async () => {
 <template>
     <div class="context">
         <the-container>
-            <h1> Test view </h1>
+            <h1> WatchAndWatchEffect view </h1>
             <button @click="count++">Count: {{ count }}</button>
             <pre>{{ res }}</pre>
         </the-container>

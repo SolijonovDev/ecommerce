@@ -10,10 +10,10 @@ const routes = [
     component: HomePage,
   },
   {
-    path: "/test",
+    path: "/watch",
     name: "Test",
     meta: { layout: "", auth: true },
-    component: () => import("../views/Test.vue"),
+    component: () => import("../views/WatchAndWatchEffect.vue"),
   },
   {
     path: "/about",

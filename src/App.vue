@@ -15,7 +15,7 @@ counter.increment();
 const router = useRouter();
 
 onMounted(() => {
-  router.push("/test");
+  router.push("/watch");
 })
 </script>
 
